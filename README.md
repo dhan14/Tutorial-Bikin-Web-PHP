@@ -9,12 +9,6 @@ $username="";
 $pass="";
 $namadb="";
 $koneksi= mysqli_connect($hostname,$username,$pass,$namadb);
-if($koneksi){
-	//echo 'Koneksi Masok';
-}else{
-	//echo 'Koneksi Gak Masok';
-}
-?>
 ```
 
 > Untuk $hostname jika di xampp isi dengan *localhost* tapi jika pada server hosting cukup dengan link database yang diberikan pihak hosting
@@ -28,6 +22,14 @@ if($koneksi){
 2. Memastikan database sudah aktif 
 Tambahkan perintah ini :
 ```php
+//Perintah test koneksi
+if($koneksi){
+	//echo 'Koneksi Masok';
+}else{
+	//echo 'Koneksi Gak Masok';
+}
+?>
+
 //Perintah query untuk akses tabel
 $query = mysqli_query($koneksi,"Select * from namaTargetTabel order by nama_kolom asc");
 
