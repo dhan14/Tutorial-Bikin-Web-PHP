@@ -1,2 +1,4 @@
 # Tutorial-Bikin-Web-PHP
-##Ini Upload Perdana
+## Cara Buat Crud
+### Menampilkan data (READ)
+
